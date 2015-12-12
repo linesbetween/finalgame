@@ -28,7 +28,7 @@ import javafx.scene.text.FontWeight;
  */
 public class MapBlock extends GridPane{
     //identify the land
-    private String TypeOfBuild="land";
+    private String TypeOfBuild;
     
     //set the nodes in the block
     
@@ -74,7 +74,7 @@ public class MapBlock extends GridPane{
                 add(level, 1,1);
                 add(soldier,1,2);
                 add(owner, 1,3);
-
+                TypeOfBuild = "land";
             }
             else
                 TypeOfBuild = "event";

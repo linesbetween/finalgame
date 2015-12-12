@@ -82,7 +82,11 @@ public class Map extends BorderPane{
         //add the page to  the pane
         setCenter(start);
         
-        BuildingEvent b = new BuildingEvent();
+         buildingEvent = new BuildingEvent();
+         executeEvent = new ExecuteEvent();
+ 
+         
+         
         //set the action for the enter game button
         b1.setOnAction(e->{
             
